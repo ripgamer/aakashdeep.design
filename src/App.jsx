@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Marquee from "@/components/ui/marquee";
 import { MarqueeDemo } from './components/ui/marqueeDemo';
+import Hero from "./components/ui/hero";
 
 const AnimatedCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -22,8 +23,8 @@ const AnimatedCursor = () => {
     // Lag effect for the boundary circle
     const interval = setInterval(() => {
       setBoundaryPosition((prev) => ({
-        x: prev.x + (position.x - prev.x) * 0.15, // Adjust the lag effect
-        y: prev.y + (position.y - prev.y) * 0.15,
+        x: prev.x + (position.x - prev.x) * 0.1, // Adjust the lag effect
+        y: prev.y + (position.y - prev.y) * 0.1,
       }));
     }, 16); // 60fps for smooth transition
 
@@ -71,14 +72,20 @@ const AnimatedCursor = () => {
 
 function App() {
   return (
-    <div className="bg-black flex items-center justify-center h-screen w-screen text-white relative">
+    <div className="bg-black flex items-center justify-center h-screen w-screen text-white relative overflow-x-hidden">
       {/* Animated Cursor - Visible only on md and larger screens */}
       <div className="hidden md:block">
         <AnimatedCursor />
       </div>
       
+
+      
+
+      <div className="flex-col items-center justify-center overflow-hidden">
+       <Hero />
+      
       {/* Marquee Demo */}
-      <div className="absolute inset-0 z-10">
+
         <MarqueeDemo repeat="2" />
       </div>
       

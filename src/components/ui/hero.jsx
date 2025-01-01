@@ -4,7 +4,7 @@ import ShinyButton from './shiny-button';
 
 function Hero() {
   return (
-    <div className="relative flex flex-col items-center justify-center mt-36 md:mt-0 h-full w-full px-4">
+    <div className="relative flex flex-col items-center justify-center mt-20 md:mt-0 h-full w-full px-4">
       {/* Hero Image */}
       <div className="absolute top-1/4 md:top-1/3 transform -translate-x-1/2 left-1/2">
         <img className="w-64 md:w-96" src="/img/hero3.png" alt="Hero Image" />

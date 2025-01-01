@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Marquee from '@/components/ui/marquee';
 import { MarqueeDemo } from './components/ui/marqueeDemo';
 import Hero from './components/ui/hero';
+import Navbar from './components/ui/navbar';
 
 const AnimatedCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -66,6 +67,7 @@ const AnimatedCursor = () => {
 function App() {
   return (
     <div className="bg-black text-white relative">
+      <Navbar></Navbar>
       {/* Animated Cursor */}
       <div className="hidden md:block">
         <AnimatedCursor />

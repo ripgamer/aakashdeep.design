@@ -20,10 +20,15 @@ function Hero() {
           word="Poster Designs, Logos and"
           className="text-2xl md:text-5xl font-bold text-black dark:text-white"
         />
+        <div>
         <BlurIn
           word="Motion graphics"
           className="text-2xl md:text-5xl font-bold text-black dark:text-white"
         />
+        <span className='flex items-center justify-center mt-[-2px]'><svg width="232" height="11" viewBox="0 0 232 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.63189 8.49393C-2.04389 7.99271 0.354855 7.4915 0.354855 7.4915C0.354855 7.4915 110.214 2.47935 124.127 1.97814C138.039 1.47693 225.831 -1.02915 228.229 0.474497C230.628 1.97814 227.27 3.48178 223.432 4.98543C219.594 6.48907 236.865 7.99271 230.628 8.49393C224.392 8.99514 124.127 7.4915 124.127 7.4915L1.31438 11C1.31438 11 13.3077 8.99514 5.63189 8.49393Z" fill="#FF4F00"/>
+</svg>
+</span></div>
       </div>
 
       {/* Subtitle Section */}

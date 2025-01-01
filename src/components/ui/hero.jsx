@@ -1,6 +1,8 @@
 import React from 'react';
 import BlurIn from './blur-in';
 import ShinyButton from './shiny-button';
+import ShimmerButton from './shimmer-button';
+import RippleButton from './ripple-button';
 
 function Hero() {
   return (
@@ -34,7 +36,7 @@ function Hero() {
       {/* Subtitle Section */}
       <div className="mt-4 text-center space-y-2">
         <BlurIn
-          word="Transforming your ideas into reality get impactful and unforgeable work "
+          word="Transforming your ideas into reality get impactful and unforgettable work "
           className="text-sm md:text-xl font-semibold text-black dark:text-[#5B5B5B]"
         />
         {/* <BlurIn
@@ -48,9 +50,15 @@ function Hero() {
       </div>
 
       {/* Button Section */}
-      <div className="mt-8 flex flex-wrap gap-4 justify-center">
-        <ShinyButton>Schedule a Call</ShinyButton>
-        <ShinyButton>Our Work</ShinyButton>
+      <div className="mt-8 flex flex-wrap gap-6 justify-center">
+      <div className="z-10 flex  items-center justify-center">
+      <ShimmerButton className="shadow-2xl ">
+        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-red-400 lg:text-lg">
+          Schedule a call
+        </span>
+      </ShimmerButton>
+    </div>
+    <RippleButton rippleColor="#ADD8E6">Our Work</RippleButton>
       </div>
     </div>
   );
